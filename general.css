@@ -1,0 +1,5 @@
+ul.menu, ul.menu li {
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+}
