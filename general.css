@@ -1,5 +1,117 @@
-ul.menu, ul.menu li {
+body {
+	font-family: Helvetica;
+	font-size: 14px;
+	text-align: center;
+	margin: 0px;
+	color: #aaa;
+	position: relative;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:active, a:hover {
+	color: black;
+}
+
+.menu ul, .menu li {
 	display: inline-block;
 	list-style: none;
-	padding: 10px;
+	padding: 0px;
+}
+
+.menu li {
+	text-transform: uppercase;
+}
+
+.menu li + li:before {
+	content: "•";
+	display: inline-block;
+	padding-left: 22px;
+    padding-right: 24px;
+}
+
+.menu {
+	margin: 10px;
+
+}
+
+header {
+	position: relative;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 60px;
+}
+
+header .heavy {
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 100px;
+	margin-top: -40px;
+}
+
+header .light {
+	font-weight: 300;
+	font-size: 30px;
+	margin-top: -22px;
+}
+
+.logo {
+	width: min-content;
+	margin: auto;
+	color: black;
+}
+
+.banner {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.banner-img {
+	width: 100%;
+	margin-top: -25%;
+}
+
+footer {
+	padding: 20px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	border-top: 1px solid black;
+	height: 100px;
+}
+
+body {
+	padding-bottom: 100px;
+}
+
+.socialmedia-icon {
+	width: 32px;
+}
+
+.contacts {
+	color: black;
+	font-size: 22px;
+}
+
+.contacts .label {
+	font-size: 38px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 'Shadows Into Light';
+}
+
+.contacts .entry {
+	margin: 15px;
+}
+
+.contacts div {
+	
 }
