@@ -1,44 +1,66 @@
+
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 
-	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="stylesheet" type="text/css" href="general.css" />
+	<link rel="stylesheet" type="text/css" href="carousel.css" />
+
 	<title>Marina Orlich Photography</title>
 	
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Shadows+Into+Light&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Shadows+Into+Light" as="style">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Shadows+Into+Light" rel="stylesheet">
+<!--	
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" /> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
+-->
+	
 </head>
 <body>
 <div class=container>
+
 	<header>
+		<a href="index.html">
 		<div class=logo>
 			<div>Marina</div>
 			<div class=heavy>Orlich</div>
 			<div class=light>Photography</div>
 		</div>
+		</a>
 	</header>
 	<nav class=menu>
-		<ul>
-			<li><a href="family.html">Family</a></li>
-			<li><a href="children.html">Children</a></li>
-			<li><a href="lovestory.html">Love Story</a></li>
-			<li><a href="wedding.html">Wedding</a></li>
-			<li><a href="pregnancy.html">Pregnancy</a></li>
-			<li><a href="contacts.html">Contacts</a></li>
-			<li><a href="prices.html">Prices</a></li>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="" onclick="myFunction()">
+			<img src="hamburger.svg" class="hamburger-icon icon"/>
+			</a>
+		<ul id=topnav>
+			<li><span class='item current'>Contacts</span></li>
+			<li><a href="index.html" class='item'>Index</a></li>
 		</ul>
+		
 	</nav>
+	
+	<script>
+		// var viewportWidth =  Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		if (screen.width < 600){
+			document.querySelector(".container").classList.add("small-screen")
+			document.querySelector(".hamburger-icon").style = "display: block"
+			document.querySelector("#topnav").style = "display: none"
+		}
+	</script>
 	<main>
-		<div class=contacts>
-			<div class=entry>
-				<div class=label>Phone:</div> <div class=value> +43 677 / 625 11 669</div>
-			</div>
-			<div class=entry>
-				<div class=label>Email:</div> <div class=value> <a href="mailto:marinakoroleva1204@gmail.com">marinakoroleva1204@gmail.com</div>
-			</div>
-			<div class=entry>
-				<div class=label>Instagram:</div> <div class=value> <a href="https://www.instagram.com/orlichmarina">@orlichmarina</div>
-			</div>
+		<h1>Contacts</h1>
+   <div class=contacts>
+		<div class=entry>
+			<div class=label>Phone:</div> <div class=value> +43 677 / 625 11 669</div>
 		</div>
+		<div class=entry>
+			<div class=label>Email:</div> <div class=value> <a href="mailto:marinakoroleva1204@gmail.com">marinakoroleva1204<wbr/>@gmail.com</div>
+		</div>
+		<div class=entry>
+			<div class=label>Instagram:</div> <div class=value> <a href="https://www.instagram.com/orlichmarina">@orlichmarina</div>
+		</div>
+	</div>
 	</main>
 	<footer>
 		<div id=socialmedia-bar>
@@ -46,5 +68,17 @@
 		</div>
 	</footer>
 </div>
+
+<script>
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </body>
 </html>
