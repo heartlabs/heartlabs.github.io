@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: gotham_book,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-image: url("banner.jpg");
+  background-size: cover;
+
+  overflow: auto;
+}
+
+h1, h2 {
+  color: #940c67;
+}
+
+.container {
+  max-width: 740px;
+  margin: auto;
+  background-color: #d5fbd5b0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+header, main {
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+}
