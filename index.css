@@ -3,30 +3,76 @@ html, body {
   padding: 0;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   font-family: gotham_book,"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-image: url("banner.jpg");
   background-size: cover;
-
+  position: relative;
   overflow: auto;
+
+  font-size: 17px;
+
+  height: 100%;
 }
 
 h1, h2 {
   color: #940c67;
+  margin-bottom: 5px;
+  padding-top: 15px;
 }
 
 .container {
   max-width: 740px;
-  margin: auto;
+  margin: 0 auto;
   background-color: #d5fbd5b0;
   min-height: 100vh;
-  overflow: hidden;
-}
 
-header, main {
-  padding: 10px;
+  overflow: visible;
+
+  text-shadow: 0px 0px 15px #d5fbd5;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+.container:hover{
+  // box-shadow: inset 0px 0px 10px 1px #000000
 }
 
 header {
   text-align: center;
+  overflow: hidden;
+}
+
+main, footer {
+  padding: 20px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0px;
+  text-align: right;
+}
+
+a.social {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+a.social > img:hover {
+  filter: drop-shadow(8px 7px 10px #333d);
+}
+
+a.social > img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0px 0px 15px #d5fbd5);
+
+  transition-property: filter;
+  transition-duration: 0.3s;
+}
+
+.topic, .date {
+  font-weight: bold;
 }
