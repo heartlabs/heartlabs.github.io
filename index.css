@@ -11,6 +11,9 @@ body {
   font-family: gotham_book,"Helvetica Neue",Helvetica,Arial,sans-serif;
   background-image: url("banner.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
   position: relative;
   overflow: auto;
 
@@ -25,16 +28,20 @@ h1, h2 {
   padding-top: 15px;
 }
 
+iframe {
+  opacity: 0.88;
+}
+
 .container {
   max-width: 740px;
-  margin: 0 auto;
+  margin: -10 auto;
   background-color: #d5fbd5b0;
   min-height: 100vh;
 
-  overflow: visible;
+  overflow: hidden;
 
   text-shadow: 0px 0px 15px #d5fbd5;
-  box-shadow: 0px 0px 10px 1px #000000;
+  box-shadow: inset 0px 0px 10px 1px #000000;
 }
 .container:hover{
   // box-shadow: inset 0px 0px 10px 1px #000000
@@ -46,7 +53,7 @@ header {
 }
 
 main, footer {
-  padding: 20px;
+  padding: 25px;
 }
 
 footer {
