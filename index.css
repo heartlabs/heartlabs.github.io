@@ -38,10 +38,11 @@ iframe {
   background-color: #d5fbd5b0;
   min-height: 100vh;
 
-  overflow: hidden;
+  position: relative;
 
   text-shadow: 0px 0px 15px #d5fbd5;
   box-shadow: inset 0px 0px 10px 1px #000000;
+  backdrop-filter: brightness(300%) contrast(50%);
 }
 .container:hover{
   // box-shadow: inset 0px 0px 10px 1px #000000
