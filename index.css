@@ -40,8 +40,11 @@ ul {
 .container {
   max-width: 740px;
   margin: -10 auto;
-  background-color: #d5fbd5b0;
+  
+  background-color: #d5fbd5;
   min-height: 100%;
+
+  background-color: #d5fbd5d0;
   min-height: 100vh;
 
   text-shadow: 0px 0px 15px #d5fbd5;
@@ -60,6 +63,8 @@ main, footer {
 
 footer {
   text-align: right;
+  margin-left: auto;
+  width: max-content;
   position: sticky;
   bottom: -20px;
 }
