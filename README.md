@@ -2,4 +2,4 @@
 
 The website of a musical duo project of mine:
 
-[heartlabs.github.io](http://heartlabs.github.io)
+[http://cheremechuzpe.space/](http://heartlabs.github.io)
