@@ -45,7 +45,7 @@ jobs:
         # - exitAtEnd -> the action will go on, every pathspec error will be logged at the end, the step will fail.
         # Default: ignore
         pathspec_error_handling: ignore
-        pull: 'NO-PULL or --rebase --autostash ...'
+        pull: 'NO-PULL'
         push: true
 #    - name: Commit new file
 #      run: git add megachess/megachess.wasm && git commit -m "updated megachess.wasm"
